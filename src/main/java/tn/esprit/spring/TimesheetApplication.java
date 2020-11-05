@@ -18,7 +18,7 @@ import tn.esprit.spring.config.LoginFilter;
 @SpringBootApplication
 @EnableAutoConfiguration
 public class TimesheetApplication {
-
+      
 	public static void main(String[] args) {SpringApplication.run(TimesheetApplication.class, args);}
 
 	@Bean
@@ -36,6 +36,7 @@ public class TimesheetApplication {
 
 
 	@Bean
+	
 	public FilterRegistrationBean loginFilter() {
 		FilterRegistrationBean registration = new FilterRegistrationBean();
 		registration.addUrlPatterns("/pages/*");
